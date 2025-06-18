@@ -5,16 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rota Rehberi</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-
   <nav class="navbar">
     <ul class="menu">
+      <!-- Sosyal Medya İkonları -->
+      <li class="social-icons">
+        <a href="https://instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:mail@example.com" title="Mail"><i class="fas fa-envelope"></i></a>
+      </li>
+      <!-- Dil Seçici -->
+      <li class="lang-select">
+        <select>
+          <option value="tr">TR</option>
+          <option value="en">EN</option>
+        </select>
+      </li>
+      <!-- Rotalar Dropdown -->
       <li class="dropdown">
         <a href="#">Rotalar</a>
         <ul class="dropdown-menu">
-          
-          <!-- TÜRKİYE -->
+          <!-- Türkiye -->
           <li class="sub-dropdown">
             <a href="#">Türkiye ▸</a>
             <ul class="sub-menu">
@@ -32,8 +46,7 @@
               <li><a href="türkiye/safranbolu.html">Safranbolu</a></li>
             </ul>
           </li>
-
-          <!-- AVRUPA -->
+          <!-- Avrupa -->
           <li class="sub-dropdown">
             <a href="#">Avrupa ▸</a>
             <ul class="sub-menu">
@@ -44,12 +57,11 @@
                 </ul>
               </li>
               <li class="sub-dropdown">
-                <a href="#">Avusturya▸</a>
+                <a href="#">Avusturya ▸</a>
                 <ul class="sub-menu">
                   <li><a href="avusturya/viyana.html">Viyana</a></li>
                 </ul>
               </li>
-              <!-- İTALYA -->
               <li class="sub-dropdown">
                 <a href="#">İtalya ▸</a>
                 <ul class="sub-menu">
@@ -63,16 +75,14 @@
                   <li><a href="italya/venedik.html">Venedik</a></li>
                 </ul>
               </li>
-              
-              <li li class="sub-dropdown">
+              <li class="sub-dropdown">
                 <a href="#">İsviçre ▸</a>
                 <ul class="sub-menu">
-                  <li><a href="isviçre/basel.hrml">Basel</a></li>
+                  <li><a href="isviçre/basel.html">Basel</a></li>
                   <li><a href="isviçre/luzern.html">Luzern</a></li>
                 </ul>
               </li>
-              
-                <li class="sub-dropdown">
+              <li class="sub-dropdown">
                 <a href="#">Yunanistan ▸</a>
                 <ul class="sub-menu">
                   <li><a href="yunanistan/atina.html">Atina</a></li>
@@ -82,15 +92,12 @@
                   <li><a href="yunanistan/selanik.html">Selanik</a></li>
                 </ul>
               </li>
-              </li>
             </ul>
           </li>
-
-          <!-- ASYA -->
+          <!-- Asya -->
           <li class="sub-dropdown">
             <a href="#">Asya ▸</a>
             <ul class="sub-menu">
-              <!-- GÜRCİSTAN -->
               <li class="sub-dropdown">
                 <a href="#">Gürcistan ▸</a>
                 <ul class="sub-menu">
@@ -100,16 +107,11 @@
               </li>
             </ul>
           </li>
-
         </ul>
       </li>
-
-      <!-- Sabit Menü -->
-       <li><a href="#">en solda ins yotube ve mail olacak.</a></li>
-      <li><a href="#">sağ taraf menüleri başlamadan önce EN/ TR dil seçimi olsun</a></li>
+      <!-- Diğer Menü Öğeleri -->
       <li><a href="#">Biz Kimiz</a></li>
       <li><a href="#">Faydalı Bilgiler</a></li>
-      <li><a href="#">Sağlıklı Tavsiyeler</a></li>
       <li><a href="#">Kullanım Şartları</a></li>
       <li><a href="#">Gizlilik</a></li>
       <li><a href="#">İletişim</a></li>
@@ -118,12 +120,25 @@
   </nav>
 
   <main class="hero">
-    <h1 style="color: rgb(16, 135, 95); background-color: bisque; margin: 50px;">Rota Rehberine Hoş Geldiniz</h1>
-    <p style="text-align: left;">Müteferriç; Derdini sıkıntısını gezerek atan, yürüyerek rahatlayan, dolaşarak sıkıntısından kurtulan kimse.</p>
+    <section id="anasayfa-arkaplan">
+      <h1 style="color: rgb(224, 43, 140);">GEZGİNLER İÇİN HAP BİLGİLER</h1>
+    </section>
+    <p style="text-align: center;">
+      Müteferriç; Derdini sıkıntısını gezerek atan, yürüyerek rahatlayan, dolaşarak sıkıntısından kurtulan kimse.
+    </p>
     <p>Dünyanın dört bir yanından şehirleri, mutfakları, ipuçlarını ve seyahat rehberlerini keşfedin.</p>
+    <div class="card-container">
+      <a href="/avusturya/viyana.html" class="card-link">
+        <div class="card">
+          <img src="/images/Viyana/Belvedere_Sarayı-3.jpg" alt="Belvedere Sarayı">
+          <div class="overlay">Viyana için Tıklayınız</div>
+        </div>
+      </a>
+    </div>
   </main>
 
+  <footer>
+    Tüm Hakları Saklıdır. | 2025 |
+  </footer>
 </body>
-
-<footer>Tüm Hakları Saklıdır. | 2025 | </footer>
 </html>
