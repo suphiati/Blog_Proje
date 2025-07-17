@@ -1,187 +1,510 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rota Rehberi</title>
-    <link rel="stylesheet" href="style.css" />
-    
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gidiniz</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <ul class="menu">
-          <!-- Sosyal Medya İkonları -->
-          <li class="social-icons">
-            <a href="https://instagram.com/" target="_blank" title="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://youtube.com/" target="_blank" title="YouTube"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="mailto:mail@example.com" title="Mail"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </li>
-          <!-- Dil Seçici -->
-          <li class="lang-select">
-            <select>
-              <option value="tr">TR</option>
-              <option value="en">EN</option>
-            </select>
-          </li>
-          <!-- Rotalar Dropdown -->
-          <li class="dropdown">
-            <a href="#">Rotalar</a>
-            <ul class="dropdown-menu">
-              <!-- Türkiye -->
-             <!-- <li class="sub-dropdown">
-                <a href="#">Türkiye ▸</a>
-                <ul class="sub-menu">
-                  <li><a href="türkiye/alanya.html">Alanya</a></li>
-                  <li><a href="türkiye/amasra.html">Amasra</a></li>
-                  <li><a href="türkiye/ankara.html">Ankara</a></li>
-                  <li><a href="türkiye/antalya.html">Antalya</a></li>
-                  <li><a href="türkiye/bursa.html">Bursa</a></li>
-                  <li><a href="türkiye/eskisehir.html">Eskişehir</a></li>
-                  <li><a href="türkiye/istanbul.html">İstanbul</a></li>
-                  <li><a href="türkiye/izmir.html">İzmir</a></li>
-                  <li><a href="türkiye/iznik.html">İznik</a></li>
-                  <li><a href="türkiye/mugla.html">Muğla</a></li>
-                  <li><a href="türkiye/kastamonu.html">Kastamonu</a></li>
-                  <li><a href="türkiye/safranbolu.html">Safranbolu</a></li>
-                </ul>
-              </li>-->
-              <!-- Avrupa -->
-              <li class="sub-dropdown">
-                <a href="#">Avrupa ▸</a>
-                <ul class="sub-menu">
-                <!--  <li class="sub-dropdown">
-                    <a href="#">Almanya ▸</a>
-                    <ul class="sub-menu">
-                      <li><a href="almanya/koln.html">Köln</a></li>
-                    </ul>
-                   </li> -->
-                  <li class="sub-dropdown">
-                    <a href="#">Avusturya ▸</a>
-                    <ul class="sub-menu">
-                      <li><a href="avusturya/viyana.html">Viyana</a></li>
-                    </ul>
-                  </li>
-                <li class="sub-dropdown">
-                    <a href="#">İtalya ▸</a>
-                    <ul class="sub-menu">
-                     <!--  <li><a href="italya/como.html">Como</a></li>-->
-                      <li><a href="italya/floransa.html">Floransa</a></li>
-                     <!--  <li><a href="italya/genova.html">Genova</a></li>-->
-                     <!--  <li><a href="italya/milano.html">Milano</a></li>-->
-                      <li><a href="italya/pisa.html">Pisa</a></li>
-                     <!--  <li><a href="italya/portofino.html">Portofino</a></li>-->
-                      <li><a href="italya/roma.html">Roma</a></li>
-                     <!--  <li><a href="italya/venedik.html">Venedik</a></li> -->
-                    </ul>
-                  <!-- </li> -->
-                  <!--<li class="sub-dropdown">
-                    <a href="#">İsviçre ▸</a>
-                    <ul class="sub-menu">
-                      <li><a href="isviçre/basel.html">Basel</a></li>
-                      <li><a href="isviçre/luzern.html">Luzern</a></li>
-                    </ul>
-                  </li>-->
-                  <li class="sub-dropdown">
-                    <a href="#">Yunanistan ▸</a>
-                    <ul class="sub-menu">
-                      <!-- <li><a href="yunanistan/atina.html">Atina</a></li>-->
-                      <!-- <li><a href="yunanistan/girit.html">Girit</a></li>-->
-                      <!-- <li><a href="yunanistan/kos.html">Kos</a></li>-->
-                      <!-- <li><a href="yunanistan/mykonos.html">Mykonos</a></li>-->
-                      <li><a href="yunanistan/selanik.html">Selanik</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <!-- Asya -->
-              <!-- <li class="sub-dropdown"> 
-                <a href="#">Asya ▸</a>
-                <ul class="sub-menu">
-                  <li class="sub-dropdown">
-                    <a href="#">Gürcistan ▸</a>
-                    <ul class="sub-menu">
-                      <li><a href="gürcistan/batum.html">Batum</a></li>
-                      <li><a href="gürcistan/tiflis.html">Tiflis</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              -->
-            </ul>
-          </li>
-          <!-- Diğer Menü Öğeleri -->
-          <li><a href="#">Biz Kimiz</a></li>
-          <li><a href="#">Faydalı Bilgiler</a></li>
-          <li><a href="#">Kullanım Şartları</a></li>
-          <li><a href="#">Gizlilik</a></li>
-          <li><a href="#">İletişim</a></li>
-          <li><a href="#">Ara</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="hero">
-      <section id="anasayfa-arkaplan">
-        <h1 style="color: rgb(224, 43, 140)"></h1>
-      </section>
-       <!--  
-    <section class="slider" id="slider">
-    <img src="img1.jpg" alt="Görsel 1" class="slide active" />
-    <img src="img2.jpg" alt="Görsel 2" class="slide" />
-    <img src="img3.jpg" alt="Görsel 3" class="slide" />
-  </section>
-  -->
+  <style>
 
- <b> ****Slider için restorant web sitesi projesi index.html e bak.*********</b>
-      <p style="text-align: center">
-        Müteferriç; Derdini sıkıntısını gezerek atan, yürüyerek rahatlayan,
-        dolaşarak sıkıntısından kurtulan kimse.
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+    body {
+      background-color: rgb(255, 255, 255);
+      color: aqua;
+    }
+
+    header {
+      /* border-top: 1px solid black; */
+      /* border-bottom: 3px solid black; */
+      border: 2px solid black;
+      border-radius: 5px;
+      margin:  5px 5px 50px 5px;
+      padding: 5px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu a {
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 5px;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+   .navbar-menu a{
+    transition: background-color 0.5s ease;
+   }
+    .navbar-menu a:hover {
+      background-color: rgb(149, 213, 219);
+      color: white;
+      /* border: 1px solid black; */
+      border-radius: 5px;
+      
+    }
+
+
+    img {
+      /* border: 2px solid black; */
+      border-radius: 250px;
+      width: 150px;
+      height: 150px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    }
+
+    .logo_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .image_logo {
+      text-align: center;
+      /* background-color: rgb(149, 213, 219); */
+      padding: 15px;
+
+      /* width: 120px; */
+      /* height: 12px; */
+    }
+
+    .aside_logo {
+      text-align: center;
+      /* background-color: rgb(149, 213, 219); */
+      padding: 15px;
+      /* object-fit: cover; */
+      /* width: 120px; */
+      /* height: 12px; */
+    }
+    .aside_logo img{
+    width: 120px;
+  height: 120px;
+  object-fit: c;
+ border-radius: 50%;
+    }
+
+    .left_text,
+    .right_text {
+      color: black;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .background-image {
+      background-image: url(images/anasayfa/portofino.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position: center center;
+      width: 100%;
+      height: 500px;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .fa-youtube:hover {
+      color: red;
+      background-color: white;
+    }
+
+    .fa-instagram:hover {
+      color: rgba(241, 0, 0, 0.962);
+      background-color: white;
+    }
+
+    .fa-envelope:hover{
+      color: blue;
+    }
+
+    .articles {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      color: black;
+    }
+    .aside_right {
+      text-align: left;
+      border: 2px solid black;
+      width: 33%;
+      /* height: 300px; */
+    }
+
+    .aside_right h3{
+      text-align: center;
+    }
+    .section_left {
+      text-align: center;
+      border: 2px solid black;
+      width: 65%;
+      /* height: 300px; */
+    }
+
+    .section_left li{
+      list-style-type: none;
+    }
+
+    footer {
+      background-color: rgb(149, 213, 219);
+      color: black;
+      padding: 10px;
+    }
+
+    footer a {
+      /* text-decoration: none; */
+      /* justify-content: space-between; */
+    }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1000;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  display: block;
+  font-weight: normal;
+}
+
+.sub-dropdown {
+  position: relative;
+}
+
+.sub-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+  display: block;
+}
+
+.dropdown a:hover,
+.sub-dropdown-content a:hover {
+  background-color: #95d5db;
+  color: white;
+}
+
+/* Hamburger gizli olacak, sadece küçük ekranda görünecek */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+  padding: 10px;
+}
+
+/* 768px altı ekranlarda değişiklik */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .social-icons {
+    display: none; /* istenirse mobilde de gösterilebilir */
+  }
+}
+
+.post-preview {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.post-preview:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post-preview a {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+}
+
+.post-image img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.post-content h3 {
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+.post-content p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.kisa_tanitim{
+  color: black;
+  text-align: center;
+  background-color: #FAF7F3;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+
+  </style>
+
+  <body>
+    <div class="logo_container">
+      <div class="left_text">Gidiniz</div>
+      <div class="image_logo"><img src="images/anasayfa/Logo.jpg" alt="" /></div>
+      <div class="right_text">Blog</div>
+  </div>
+  <!-- Logonun soluna Gidiniz sağına Blog yaz!!! -->
+    <header> 
+    <div class="menu" id="menu">
+      <div class="social-icons" id="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:gidiniz@blog.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="index3.html">Anasayfa</a>
+        <div class="dropdown">
+  <a href="#">Rotalar <i class="fas fa-caret-down"></i></a>
+  <div class="dropdown-content">
+    <div class="sub-dropdown">
+      <a href="#">Almanya <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="almanya/koln.html">Köln</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Avusturya <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="avusturya/viyana.html">Viyana</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Gemi Turu <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="#">Gemi Turu</a>
+        <a href="#">Gemi Turu</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Gürcistan <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="gürcistan/batum.html">Batum</a>
+        <a href="gürcistan/tiflis.html">Tiflis</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">İsviçre <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="isviçre/basel.html">Basel</a>
+        <a href="isviçre/luzern.html">Luzern</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">İtalya <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="italya/roma.html">Roma</a>
+        <a href="italya/milano.html">Milano</a>
+        <a href="italya/venedik.html">Venedik</a>
+        <a href="italya/pisa.html">Pisa</a>
+        <a href="italya/portofino.html">Portofino</a>
+        <a href="italya/como.html">Como</a>
+        <a href="italya/floransa.html">Floransa</a>
+        <a href="italya/genova.html">Genova</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Kıbrıs <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="kibris/girne.html">Girne</a>
+        <a href="kibris/lefkosa.html">Lefkoşa</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Türkiye <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="türkiye/alanya.html">Alanya</a>
+        <a href="türkiye/amasra.html">Amasra</a>
+        <a href="türkiye/ankara.html">Ankara</a>
+        <a href="türkiye/antalya.html">Antalya</a>
+        <a href="türkiye/bursa.html">Bursa</a>
+        <a href="türkiye/eskisehir.html">Eskişehir</a>
+        <a href="türkiye/istanbul.html">İstanbul</a>
+        <a href="türkiye/izmir.html">İzmir</a>
+        <a href="türkiye/iznik.html">İznik</a>
+        <a href="türkiye/kastamonu.html">Kastamonu</a>
+        <a href="türkiye/safranbolu.html">Safranbolu</a>
+        <a href="türkiye/sapanca_golu.html">Sapanca Gölü</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Yunanistan <i class="fas fa-caret-right"></i></a>
+      <div class="sub-dropdown-content">
+        <a href="yunanistan/atina.html">Atina</a>
+        <a href="yunanistan/selanik.html">Selanik</a>
+        <a href="yunanistan/girit.html">Girit</a>
+        <a href="yunanistan/kos.html">Kos</a>
+        <a href="yunanistan/mykonos.html">Mikonos</a>
+      </div>
+    </div>
+  </div>
+  </div>
+        <a href="fayadali-bilgiler.html">Faydalı Bilgiler</a>
+        <a href="biz-kimiz.html">Biz Kimiz</a>
+        <a href="iletisim.html">İletişim</a>
+      
+      <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+      </div>
+    </header>
+
+    <div class="background-image"></div>
+    <div class="kisa_tanitim">
+      <p>
+        Bu site, bizim gibi yeni yerler keşfetmeyi seven, yolculuğa tutkuyla bağlı müteferriçler için bir rehber, bir yoldaş olma amacıyla hazırlandı.
       </p>
       <p>
-        Dünyanın dört bir yanından şehirleri, mutfakları, ipuçlarını ve seyahat
-        rehberlerini keşfedin.
+        Yani bizim gibi yerinde duramayan, yollarda olmayı seven herkes için bir keşif rehberi!
       </p>
+      <p>
+        <b>💼 <b>Müteferriç:</b> Gezmeyi, dolaşmayı seven; yerinde duramayan, keşfetmeden duramayan gezgin ruhlu kişidir.
+    </p>
+  </div>
+    <section class="articles">
+      <section class="section_left">
+  <h2>Son Yazılar</h2>
 
-      <div class="left">
-      <h2>Son Yazılar</h2>
-      <p>1. Yeni bir rota keşfedin...</p>
-      <p>2. Seyahat ipuçları</p>
-    </div>
-    <div class="right">
-      <h2>Hakkımızda</h2>
-      <p>Biz bir gezi bloguyuz...</p>
-      <div class="social">
-        <a href="#">Instagram</a> |
-        <a href="#">YouTube</a>
+  <div class="post-preview">
+    <a href="avusturya/viyana.html">
+      <div class="post-image">
+        <img src="images/Viyana/Belvedere_Sarayı-3.jpg" alt="Viyana" >
       </div>
-    </div>
-      <div class="card-container">
-        <a href="/avusturya/viyana.html" class="card-link">
-          <div class="card">
-            <img
-              src="/images/Viyana/Belvedere_Sarayı-3.jpg"
-              alt="Belvedere Sarayı"
-            />
-            <div class="overlay">Viyana için Tıklayınız</div>
-          </div>
-        </a>
+      <div class="post-content">
+        <h3>Viyana</h3>
+        <p>Avusturya'nın başkenti olan Viyana, tarihi dokusu, klasik müziği ve mimarisiyle dikkat çeker...</p>
       </div>
-    </main>
+    </a>
+  </div>
 
-    <footer>Tüm Hakları Saklıdır. | 2025 |</footer>
+  <div class="post-preview">
+    <a href="gürcistan/tiflis.html">
+      <div class="post-image">
+        <img src="images/yazilar/tiflis.jpg" alt="Tiflis">
+      </div>
+      <div class="post-content">
+        <h3>Tiflis</h3>
+        <p>Gürcistan’ın başkenti olan Tiflis, Kura Nehri boyunca uzanan tarihi sokakları ve sıcak atmosferiyle ünlüdür...</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-preview">
+    <a href="gürcistan/batum.html">
+      <div class="post-image">
+        <img src="images/yazilar/batum.jpg" alt="Batum">
+      </div>
+      <div class="post-content">
+        <h3>Batum</h3>
+        <p>Karadeniz kıyısında yer alan Batum, modern mimarisi, plajları ve renkli gece hayatıyla seyahatseverlerin uğrak noktasıdır...</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+      <aside class="aside_right">
+        <h3>Biz Kimiz</h3>
+        Biz kimiz hakkında kısa bilgi ve <a href="biz-kimiz.html">devamı...</a>
+
+        <div class="aside_logo"><img src="images/anasayfa/IMG_20250531_094913.jpg" alt="" /></div>
+
+        <h4>Bizi Takip Edin</h4>
+        <a href="instagram sayfası">Instagram</a>
+        <a href="youtube sayfası">Youtube</a>
+      </aside>
+    </section>
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById("navbar-menu");
+    menu.classList.toggle("show");
+  }
+</script>
   </body>
+
+  <footer>
+    <p>© Tüm hakları saklıdır. | Gidiniz Blog</p>
+    <!-- <a href="kullanim-sartlari.html">Kullanım Şartları</a> -->
+  </footer>
 </html>
