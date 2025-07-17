@@ -229,41 +229,6 @@
   color: black;
   padding: 10px;
 }
-
-/* 768px altı ekranlarda değişiklik */
-@media (max-width: 768px) {
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 999;
-    border-top: 1px solid #ccc;
-  }
-
-  .navbar-menu.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .menu {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-
-  .social-icons {
-    display: none; /* istenirse mobilde de gösterilebilir */
-  }
-}
-
 .post-preview {
   display: flex;
   border: 1px solid #ccc;
@@ -316,7 +281,36 @@
   margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Yeterince aşağıda görünüyor mu kontrol et */
+    left: 0;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+  }
+  .navbar-menu.show {
+    display: flex;
+  }
 
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .social-icons {
+    display: none;
+  }
+}
   </style>
 
   <body>
@@ -333,8 +327,12 @@
         <a href="youtube"><i class="fab fa-youtube"></i></a>
         <a href="mailto:gidiniz@blog.com"><i class="fas fa-envelope"></i></a>
       </div>
+      <!-- HAMBURGER BUTON BURAYA TAŞINDI -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
       <div class="navbar-menu" id="navbar-menu">
-        <a href="index3.html">Anasayfa</a>
+        <a href="index.html">Anasayfa</a>
         <div class="dropdown">
   <a href="#">Rotalar <i class="fas fa-caret-down"></i></a>
   <div class="dropdown-content">
@@ -439,7 +437,7 @@
         Yani bizim gibi yerinde duramayan, yollarda olmayı seven herkes için bir keşif rehberi!
       </p>
       <p>
-        <b>💼 <b>Müteferriç:</b> Gezmeyi, dolaşmayı seven; yerinde duramayan, keşfetmeden duramayan gezgin ruhlu kişidir.
+        💼 <b>Müteferriç:</b> Gezmeyi, dolaşmayı seven; yerinde duramayan, keşfetmeden duramayan gezgin ruhlu kişidir.
     </p>
   </div>
     <section class="articles">
