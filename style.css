@@ -26,6 +26,7 @@ body {
   position: relative;
   padding: 0;
   margin: 0 4px;
+  
 }
 
 /* Sosyal medya ikonları için özel stil */
@@ -42,7 +43,7 @@ body {
   transition: color 0.2s;
 }
 .menu .social-icons a:hover {
-  color: #ffe082;
+  color: #ff8282;
 }
 
 /* Dil seçici */
@@ -269,4 +270,58 @@ footer {
   padding: 12px 0;
   border-radius: 0 0 12px 12px;
   margin-top: 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+.hero-logo {
+  text-align: center;
+  padding: 20px;
+  background: #e6f0ff;
+}
+
+.slider {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left {
+  flex: 3;
+  background: #f9f9f9;
+  padding: 15px;
+}
+
+.right {
+  flex: 1;
+  background: #f1f1f1;
+  padding: 15px;
+}
+
+.social a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
 }
