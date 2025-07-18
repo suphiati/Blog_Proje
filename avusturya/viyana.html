@@ -233,36 +233,43 @@
 /* 768px altı ekranlarda değişiklik */
 @media (max-width: 768px) {
   .navbar-menu {
-    display: none;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%; /* ekranın dışında başlayacak */
+    width: 250px;
+    height: 100vh;
     background-color: white;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 999;
-    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 4px 0 8px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
   }
 
   .navbar-menu.show {
-    display: flex;
+    left: 0; /* sol kenardan ekrana girer */
   }
 
   .hamburger {
     display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
   }
 
   .menu {
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
   }
 
   .social-icons {
-    display: none; /* istenirse mobilde de gösterilebilir */
+    display: none;
   }
 }
+
 
 .post-preview {
   display: flex;
@@ -325,6 +332,38 @@
 .kalma_list{
   list-style-type: none;
 }
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .social-icons {
+    display: none;
+  }
+}
   </style>
 <body>
  <div class="logo_container">
@@ -340,6 +379,10 @@
         <a href="youtube"><i class="fab fa-youtube"></i></a>
         <a href="mailto:gidiniz@blog.com"><i class="fas fa-envelope"></i></a>
       </div>
+      <!-- HAMBURGER BUTON BURAYA TAŞINDI -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
       <div class="navbar-menu" id="navbar-menu">
         <a href="/index3.html">Anasayfa</a>
         <div class="dropdown">
@@ -431,9 +474,6 @@
         <a href="biz-kimiz.html">Biz Kimiz</a>
         <a href="iletisim.html">İletişim</a>
       
-      <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
       </div>
     </header>
 <h2 class="ulke_baslik">Viyana</h2>
@@ -888,14 +928,16 @@ Avusturya kahvesi: "Melange" (cappuccino benzeri).
         </div>
       </section>
       <script>
-  function toggleMenu() {
-    var menu = document.getElementById("navbar-menu");
-    menu.classList.toggle("show");
-  }
   document.addEventListener("DOMContentLoaded", function () {
-    // Tüm <a> etiketlerini al
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.getElementById("navbar-menu");
     const links = document.querySelectorAll("a");
 
+    hamburger.addEventListener("click", function () {
+      menu.classList.toggle("show");
+    });
+
+    // Görsel linkleri yeni sekmede aç
     links.forEach(link => {
       const href = link.getAttribute("href");
       if (href && href.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
